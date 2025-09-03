@@ -1,0 +1,24 @@
+Domain Name System Query Analysis for: www.youtube.com
+
+A Record Type Results:
+- 142.250.193.142
+- 172.217.26.14
+- 142.250.182.46
+- 172.217.26.46
+- 142.250.183.238
+- 142.250.193.14
+- 142.250.182.110
+- 172.217.26.110
+- 172.217.167.206
+- 172.217.27.174
+- 142.250.77.206
+- 142.250.77.238
+- 142.250.182.174
+- 142.250.192.174
+- 142.251.223.206
+- 142.250.76.78
+
+MX records unavailable or error occurred: The DNS response does not contain an answer to the question: www.youtube.com. IN MX
+
+CNAME Record Type Results:
+- youtube-ui.l.google.com.
