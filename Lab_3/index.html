@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTTP Caching Demo</title>
+  </head>
+  <body>
+    <h1>HTTP Caching Demonstration</h1>
+
+    <div>
+      <h3>Current time:</h3>
+      <p id="current-time"></p>
+    </div>
+
+    <div>
+      <h3>How to test caching:</h3>
+      <ol>
+        <li>Open browser dev tools (F12)</li>
+        <li>Go to Network tab</li>
+        <li>Refresh this page</li>
+        <li>Look for 304 Not Modified response</li>
+      </ol>
+    </div>
+
+    <button onclick="location.reload()">Normal Refresh</button>
+    <button onclick="location.reload(true)">Hard Refresh</button>
+
+    <div>
+      <h3>Technical Details:</h3>
+      <ul>
+        <li><strong>ETag:</strong> MD5 hash validation</li>
+        <li><strong>Last-Modified:</strong> Timestamp validation</li>
+      </ul>
+    </div>
+
+    <script>
+      document.getElementById("current-time").textContent =
+        new Date().toLocaleString();
+
+      setInterval(function () {
+        document.getElementById("current-time").textContent =
+          new Date().toLocaleString();
+      }, 1000);
+    </script>
+  </body>
+</html>
